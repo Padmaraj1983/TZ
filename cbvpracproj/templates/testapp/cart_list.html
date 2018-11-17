@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+{%extends 'testapp/base.html'%}
+{%block body_block%}
+<div class="container">
+     <h1> List of Cart Itemst</h1>
+    <table>
+     <tr>
+         <th>Item</th>
+         <th>Quantity</th>
+         <th>Price</th>
+     </tr>
+        {%for cart in cart_list%}
+        <tr>
+          <td>{{cart.itemname}}</td>
+          <td>{{cart.qty}}</td>
+          <td>{{cart.price}}</td>
+         </tr>
+        {%endfor%}
+    </table>
+</div>
+{%endblock%}

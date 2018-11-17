@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+     {%block body_block%}
+          <h1>List of all Employess</h1>
+           {%for employee in employee_list%}
+            <h3><a href='/{{employee.id}}'>{{employee.ename}}</h3>
+           {%endfor%}
+      {%endblock%}

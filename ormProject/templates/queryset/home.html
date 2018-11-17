@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{%extends 'queryset/base.html'%}
+  {%block body_block%}
+    <table>
+        <tr>
+            <th>Eno</th>
+            <th>Ename</th>
+            <th>Salary</th>
+        </tr>
+        {%for emp in employee%}
+        <tr>
+            <td>{{emp.eno}}</td>
+            <td>{{emp.ename}}</td>
+            <td>{{emp.sal}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+    {%endblock%}
+
+
+
