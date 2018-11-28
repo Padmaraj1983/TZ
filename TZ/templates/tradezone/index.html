@@ -3,17 +3,16 @@
 {%load staticfiles%}
    {%block body_block%}
         <div id="tradeCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
+
           <ul class="carousel-indicators">
                     <li data-target="#tradeCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#tradeCarousel" data-slide-to="1"></li>
-                    <li data-target="#tradeCarousel" data-slide-to="2"></li>
-          </ul>
+          git </ul>
 
-           <!-- The slideshow -->
+
           <div class="carousel-inner" align="center">
           <div class="carousel-item active">
-                <img src="{%static 'images/Art_Of_Trading.jpg'%}" alt="ArtOfTrading" width="1100" height="900">
+                <img src="{%static 'images/Art_Of_Trading_edited2.jpg'%}" alt="ArtOfTrading" width="800" height="600">
                 <div class="carousel-caption" align="right">
                     <h3>MASTER </h3>
                     <h3>Art of Trading</h3>
@@ -21,13 +20,18 @@
                 </div>
           </div>
           <div class="carousel-item">
-                <img src="{%static 'images/Investment.jpg'%}" alt="Chicago" width="1100" height="900">
+                <img src="{%static 'images/Customer_Service.jpg'%}" alt="Investment" width="800" height="600">
+                <div class="carousel-caption" align="right">
+                    <h3>ASSISTANCE </h3>
+                    <h3>On The Stock Market</h3>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Click Me</button>
+                </div>
           </div>
-          <div class="carousel-item">
-                <img src="{%static 'images/Trade.jpg'%}" alt="New York" width="1100" height="900">
-          </div>
+          <!--div class="carousel-item">
+                <img src="{%static 'images/Trade_edited.jpg'%}" alt="Trade" width="800" height="600">
+          </div-->
     </div>
-      <!-- Left and right controls -->
+
     <a class="carousel-control-prev" href="#tradeCarousel" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
     </a>
@@ -35,4 +39,6 @@
         <span class="carousel-control-next-icon"></span>
     </a>
     </div>
+
+
    {%endblock%}

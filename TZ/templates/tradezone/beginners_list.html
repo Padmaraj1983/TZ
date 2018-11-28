@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'tradezone/base.html'%}
+{%block title_block%}
+{%endblock%}
+{%block body_block%}
+<div class="container">
+    <div class="Beglist">
+        <h1>Stock Market Beginner's Guide</h1>
+      {% for post in beginners_list%}
+        <p> {{post.body}}</p>
+        <i class="fa fa-hand-o-right" align="center">&nbsp;&nbsp;<a href="/vbyouinvest"> <button type="button" class="btn btn-info">{{post.text1}}</button></a></i><br/>
+        <i class="fa fa-hand-o-right" align="center">&nbsp;&nbsp;<a href="/dti"> <button type="button" class="btn btn-info">{{post.text2}}</button></a> </i><br/>
+        <i class="fa fa-hand-o-right" align="center">&nbsp;&nbsp;<a href="/bestInvest"> <button type="button" class="btn btn-info">{{post.text3}}</button></a> </i><br/>
+        <i class="fa fa-hand-o-right" align="center">&nbsp;&nbsp;<a href="#"> <button type="button" class="btn btn-info">{{post.text4}}</button></a> </i><br/>
+        <i class="fa fa-hand-o-right" align="center">&nbsp;&nbsp;<a href="#"> <button type="button" class="btn btn-info">{{post.text5}}</button></a> </i><br/>
+        <i class="fa fa-hand-o-right" align="center">&nbsp;&nbsp;<a href="#"> <button type="button" class="btn btn-info">{{post.text6}}</button></a> </i><br/>
+        <i class="fa fa-hand-o-right" align="center">&nbsp;&nbsp;<a href="#"> <button type="button" class="btn btn-info">{{post.text7}}</button></a> </i><br/>
+        <i class="fa fa-hand-o-right" align="center">&nbsp;&nbsp;<a href="#"> <button type="button" class="btn btn-info">{{post.text8}}</button></a> </i><br/>
+        {%endfor%}<br /><br />
+        <h5 align="center">{%include 'tradezone/pagination.html' with page=beginners_list%}</h5>
+     {%endblock%}
+    </div>
+</div>

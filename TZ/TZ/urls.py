@@ -21,4 +21,7 @@ urlpatterns = [
     url(r'^$',views.home_page_view),
     url(r'^about/', views.about_page_view),
     url(r'^index/', views.index_page_view),
+    url(r'^learning/', views.beginners_list_view),
+    url(r'^vbyouinvest/', views.verifyBeforeInvest_view),
+    url(r'^bestInvest/', views.bestInvest_view),
 ]
